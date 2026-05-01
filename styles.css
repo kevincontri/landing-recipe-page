@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+#page {
+  max-width: 900px;
+  padding: 44px;
+  background-color: white;
+  margin: auto;
+  border-radius: 24px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 24px;
+  background-size: cover;
+}
+
+body h1 {
+  font:
+    400 45px/1.5 "Young Serif",
+    sans-serif;
+  margin-bottom: 22px;
+}
+
+body p {
+  font:
+    400 16px/1.5 "Outfit",
+    sans-serif;
+  color: hsl(0, 0%, 43%);
+}
+
+#prep {
+  margin-block: 24px;
+  padding: 20px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+  h3 {
+    font:
+      700 20px/1.5 "Outfit",
+      sans-serif;
+    color: hsl(332, 51%, 32%);
+  }
+
+  ul {
+    margin-top: 6px;
+    padding-left: 22px;
+  }
+
+  li {
+    padding-left: 12px;
+    span {
+      font:
+        700 16px/2 "Outfit",
+        sans-serif;
+    }
+    color: hsl(30, 10%, 34%);
+
+    &::marker {
+      color: hsl(332, 51%, 32%);
+    }
+  }
+}
+
+#page h2 {
+  font:
+    400 30px/1.5 "Young Serif",
+    sans-serif;
+  color: hsl(14, 45%, 36%);
+  margin-block: 15px;
+}
+
+.ingredients {
+  padding-left: 25px;
+
+  li {
+    padding-left: 12px;
+
+    &::marker {
+      color: hsl(14, 45%, 36%);
+    }
+  }
+
+  li p {
+    line-height: 2;
+  }
+}
+
+#page hr {
+  margin-block: 25px;
+  height: 1px;
+  border: none;
+  background-color: rgb(231, 231, 231);
+}
+
+#instructions {
+  padding-left: 22px;
+
+  li {
+    padding-left: 16px;
+    font:
+      600 16px/1.5 "Outfit",
+      sans-serif;
+    color: hsl(14, 45%, 36%);
+
+    span {
+      font:
+        700 16px/2 "Outfit",
+        sans-serif;
+    }
+  }
+}
+
+#table {
+  margin-top: 16px;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Outfit", sans-serif;
+  color: hsl(0, 0%, 43%);
+
+  tr,
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:last-child {
+    border-bottom: none;
+  }
+
+  tr td + td {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+.attribution {
+  margin-block: 14px;
+  text-align: center;
+  font:
+    400 10px/1.5 "Outfit",
+    sans-serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+
+  #page {
+    width: 100%;
+    margin: 0;
+    padding: 0 32px 32px;
+    border-radius: 0;
+  }
+
+  #page img {
+    width: calc(100% + 64px);
+    margin-left: -32px;
+    margin-right: -32px;
+    border-radius: 0;
+    margin-bottom: 32px;
+  }
+
+  #page h1,
+  #page h2,
+  #prep,
+  .ingredients,
+  #instructions,
+  #page > p,
+  #page > hr,
+  #page > table {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
